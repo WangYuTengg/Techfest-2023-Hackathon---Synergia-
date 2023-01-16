@@ -64,11 +64,34 @@ const leaveOptions = [
 ];
 
 
+const App2 = () => {
+  const[show, setShow] = useState(false);
+  return (
+    <div>
+      {
+        show && <p>Show and Hide this div</p>
+      }
+      <button type = "button" onClick={()=>setShow()}> Show / Hide</button>
+    </div>
+  )
+}
 export default function App() {
+  const[show, setShow] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
+  var i = Math.floor(Math.random() * 10000);
+  var Ind = document.getElementsByClassName('Ind');
+  function createDiv() {
+    let div = document.createElement('div');
+    div.innerText = 'Job Index:';
+    document.body.appendChild(div);
+  }
 
   return (
     <div>
+      <h1>Company Name</h1>
+      <form>
+        <input type="text" name='Company Name' required/>
+      </form>
       <h1>PayScale</h1>
       <div className="App">
         <Select
@@ -125,6 +148,12 @@ export default function App() {
           options={leaveOptions}
         />
       </div>
+      
+      <button type = "button" onClick={()=>setShow(!show)}> Create Listing</button>
+      {
+        show && <h1>Job Listing Index: BI{i}</h1>
+      }
+      
     </div>
     
   );
