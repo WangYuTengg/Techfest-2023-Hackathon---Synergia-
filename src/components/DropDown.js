@@ -69,7 +69,7 @@ export default function App() {
 
   return (
     <div>
-      PayScale
+      <h1>PayScale</h1>
       <div className="App">
         <Select
           defaultValue={selectedOption}
@@ -77,7 +77,7 @@ export default function App() {
           options={payOptions}
         />
       </div>
-      Onsite
+      <h1>OnSite</h1>
       <div className="App">
         <Select
           defaultValue={selectedOption}
@@ -85,7 +85,7 @@ export default function App() {
           options={onsiteOptions}
         />
       </div>
-      Years of Experience
+      <h1>Years of Experience</h1>
       <div className="App">
         <Select
           defaultValue={selectedOption}
@@ -93,7 +93,7 @@ export default function App() {
           options={expOptions}
         />
       </div>
-      Benefits
+      <h1>Benefits</h1>
       <div className="App">
         <Select
           defaultValue={selectedOption}
@@ -101,7 +101,7 @@ export default function App() {
           options={benOptions}
         />
       </div>
-      Size
+      <h1>Size</h1>
       <div className="App">
         <Select
           defaultValue={selectedOption}
@@ -109,7 +109,7 @@ export default function App() {
           options={sizeOptions}
         />
       </div>
-      Weekly Hours
+      <h1>Weekly Hours</h1>
       <div className="App">
         <Select
           defaultValue={selectedOption}
@@ -117,7 +117,7 @@ export default function App() {
           options={hourOptions}
         />
       </div>
-      Annual Leave
+      <h1>Annual Leave</h1>
       <div className="App">
         <Select
           defaultValue={selectedOption}
