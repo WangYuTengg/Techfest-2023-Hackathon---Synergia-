@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+About the project: https://devpost.com/software/team-21_synergia
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
