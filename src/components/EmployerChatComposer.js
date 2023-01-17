@@ -38,12 +38,13 @@ export default class ChatComposer extends Component {
       <div className="chat-composer">
         <form onSubmit={this.handleSubmit}>
           <input
-            className="form-control"
+            className="form-control chat-input"
             placeholder="Type & hit enter"
             onChange={this.handleCompose}
             value={this.state.new}
           />
         </form>
+        <h2 className="title">- Chatting with Bob Marley - </h2>
       </div>
     );
   }

@@ -9,12 +9,11 @@
 but flexbox dont allow overflow scroll out of the box
 */
 .box {
-  height: 200px;
+  height: 60vh;
   border: 1px solid #ccc;
   border-radius: 3px;
   margin-bottom: 10px;
   overflow-y: auto;
-  
 }
 .box .inner {
   display: flex;
@@ -40,13 +39,15 @@ but flexbox dont allow overflow scroll out of the box
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
+  color:black;
+  font-size: 24px;
 }
 .box .reference {
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
 }
-input {
+.chat-input {
   border-radius: 3px;
   width: 90%;
   padding: 10px;
@@ -56,23 +57,14 @@ input {
   background-color: #eee;
 }
 
-body {
-  margin: 0;
-  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #000;
+.black{
+  color:black;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-h1{
-  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  color: #fff;
-}
-
-p {
-  margin: 0 0 0 0px;
+.title{
+  color: white;
+  padding: 20px;
+  font-size: 2rem;
 }

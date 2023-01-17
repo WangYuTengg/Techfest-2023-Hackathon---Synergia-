@@ -4,7 +4,7 @@ import TinderCard from 'react-tinder-card';
 
 
 const JobCard = () => {
-    const [JobCards, setCards] = React.useState([
+    const [JobCards] = React.useState([
         {
             companyName: "Apple",
             role: "Front-end Developer",

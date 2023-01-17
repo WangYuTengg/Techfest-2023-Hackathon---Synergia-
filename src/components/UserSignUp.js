@@ -69,7 +69,7 @@ class UserSignUp extends Component{
                     <form className='LastName'>
                         <label className='sign-up-label'>
                             <h2 className='left'>Last name: </h2>
-                        <input type="password" 
+                        <input type="text" 
                             name= "lastname"
                             value = {this.state.lastname}
                             onChange = {this.handleChange} />     

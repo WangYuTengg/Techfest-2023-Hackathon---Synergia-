@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import "./styles.css";
+import "./EmployerChatStyles.css";
 
 import ChatWindow from "./EmployerChatWindow";
 import ChatComposer from "./EmployerChatComposer";
@@ -10,7 +9,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       messages: [
-        { text: "Hello Applicant! We are pleased to inform you that we have shortlisted you for the position. Please reply to this message to take the next step with us." }
+        { text: <h1 className="black">Hello Applicant! We are pleased to inform you that we have shortlisted you for the position. Please reply to this message to take the next step with us.</h1> }
       ]
     };
   }
@@ -32,7 +31,6 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Chat</h1>
         {/* send stored messages as props to chat window */}
         <ChatWindow messagesList={this.state.messages} />
         {/* send submitted props to chat composer */}
@@ -42,5 +40,3 @@ export default class App extends Component {
   }
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);

@@ -61,7 +61,7 @@ const EmployerLogin = () => {
     return ( 
     <div>
         <div className='hero'>
-            <img src={bgImage}/>
+            <img src={bgImage} alt=''/>
         </div>
         <div className='content'>
             <h1 className='Synergia'>Synergia</h1>
