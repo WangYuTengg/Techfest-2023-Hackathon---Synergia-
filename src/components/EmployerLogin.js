@@ -13,12 +13,7 @@ const EmployerLogin = () => {
         {
             username: "Apple",
             password: "abc123",
-            JobIndex: "WTF-12345"
-        },
-        {
-            username: "Google",
-            password: "abc123",
-            JobIndex: "WTF-123456"
+            JobIndex: "AAP-12345"
         }
     ];
 
@@ -72,29 +67,30 @@ const EmployerLogin = () => {
             <h1 className='Synergia'>Synergia</h1>
             <p>Connecting you with your potential career.</p>
             <div className='login-buttons'>
-                <Link to="/Home" className='btn'>Users</Link>
+                <Link to="/" className='btn'>Users</Link>
                 <Link to="/EmployerLoginPage" className='btn btn-light'>Employers</Link>
             </div>
             {isSubmitted ? navigate("/EmployerPage")
             :  <form onSubmit={handleSubmit} className='user-login'>
                 <label>
-                    <p>Username</p>
+                    <p>Username:</p>
                     <input type="text" name='username' required/>
                     {renderErrorMessage("username")}
                 </label>
                 <label>
-                    <p>Password</p>
+                    <p>Password:</p>
                     <input type="password" name='pw' required/>
                     {renderErrorMessage("pw")}
                 </label>
                 <label>
-                    <p>Job Index Number</p>
+                    <p>Job Index Number:</p>
                     <input type="text" name='JobIndex' required/>
                     {renderErrorMessage("JobIndex")}
                 </label>
                 <div>
-                    <button type="submit" className='btn'>Submit</button>
+                    <button type="submit" className='btn down'>Log In</button>
                 </div>
+                <Link to="/" className='btn down'>Create Listing</Link>
             </form>}
         </div>
     </div>

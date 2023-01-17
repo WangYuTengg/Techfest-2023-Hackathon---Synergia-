@@ -3,7 +3,7 @@ import bgImage from '../assets/NasaImg.jpg';
 import { Link, useNavigate} from 'react-router-dom';
 import './Login.css';
 
-const BG = () => {
+const UserLogin = () => {
     // React States
     const [errorMessages, setErrorMessages] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -64,28 +64,30 @@ const BG = () => {
             <h1 className="Synergia">Synergia</h1>
             <p>Connecting you with your potential career.</p>
             <div className='login-buttons'>
-                <Link to="/Home" className='btn btn-light'>Users</Link>
+                <Link to="/" className='btn btn-light'>Users</Link>
                 <Link to="/EmployerLoginPage" className='btn'>Employers</Link>
             </div>
             {isSubmitted ? navigate("/UserSwipePage")
             :  <form onSubmit={handleSubmit} className='user-login'>
                 <label>
-                    <p>Username</p>
+                    <p>Username:</p>
                     <input type="text" name='username' required/>
                     {renderErrorMessage("username")}
                 </label>
                 <label>
-                    <p>Password</p>
+                    <p>Password:</p>
                     <input type="password" name='pw' required/>
                     {renderErrorMessage("pw")}
                 </label>
                 <div>
-                    <button type="submit" className='btn'>Submit</button>
+                    <button type="submit" className='btn down'>Log In</button>
                 </div>
-            </form>}
+                <Link to="/UserSignUpPage" className='btn down'>Sign Up</Link>
+            </form>
+            }
         </div>
     </div>
     );
 }
  
-export default BG;
+export default UserLogin;

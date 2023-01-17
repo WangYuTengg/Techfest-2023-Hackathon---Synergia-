@@ -1,10 +1,12 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import EmployerPageDets from '../components/EmployerPageDets';
+import NavbarEmployer from '../components/NavbarEmployer';
 
 const EmployerPage = () => {
     return (
         <div>
-            <Navbar />
+            <NavbarEmployer />
+            <EmployerPageDets />
         </div>
     )
 }

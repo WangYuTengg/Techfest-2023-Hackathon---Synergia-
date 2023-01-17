@@ -10,16 +10,11 @@ const Navbar = () => {
     return (
         <div className = 'header'>
             <Link to='/'><h1 className='logo'>Synergia</h1></Link>
-
+            <h1 className='job-title'>Front-End Developer (AAP-12345)</h1>
+            <h1></h1>
             <ul className={click ? 'nav-menu active': 'nav-menu'}>
                 <li>
-                    <Link to='/UserSwipePage'>Home</Link>
-                </li>
-                <li>
-                    <Link to='/UserProfilePage'>Profile</Link>
-                </li>
-                <li>
-                    <Link to='/UserChatPage'>Chats</Link>
+                    <Link to='/EmployerPage'>Home</Link>
                 </li>
                 <li>
                     <Link to='/UserSwipePage'>Settings</Link>
